@@ -22,24 +22,31 @@ export default function Footer({ userInfo }: FooterProps) {
             <h3 className="text-xl font-bold text-primary">
               {userInfo.firstName} {userInfo.lastName}
             </h3>
-            <p className="text-muted-foreground mt-1">Full Stack Python Developer</p>
+            <p className="text-muted-foreground mt-1">
+              Full Stack Python Developer
+            </p>
           </div>
-          
+
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <Button variant="ghost" size="icon" asChild>
-                <a href={userInfo.socialLinks.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <a
+                  href={userInfo.socialLinks.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <a href={userInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <a
+                  href={userInfo.socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
                   <Linkedin className="h-5 w-5" />
-                </a>
-              </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <a href={userInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                  <Twitter className="h-5 w-5" />
                 </a>
               </Button>
             </div>

@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "@/providers/ThemeProvider";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
-  
+
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
@@ -19,11 +23,11 @@ export default function ThemeToggle() {
           ) : (
             <Moon className="h-5 w-5" />
           )}
-          <span className="sr-only">Toggle theme</span>
+          <span className="sr-only">Mudar tema</span>
         </Button>
       </TooltipTrigger>
       <TooltipContent>
-        <p>Toggle theme</p>
+        <p>Mudar tema</p>
       </TooltipContent>
     </Tooltip>
   );

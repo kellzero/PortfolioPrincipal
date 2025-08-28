@@ -7,8 +7,6 @@ export interface UserInfo {
   socialLinks: {
     github: string;
     linkedin: string;
-    twitter: string;
-    dev: string;
   };
 }
 

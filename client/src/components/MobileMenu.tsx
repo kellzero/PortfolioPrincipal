@@ -12,44 +12,46 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div 
+        <motion.div
           className="md:hidden bg-background border-b border-border shadow-md"
           initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: 'auto' }}
+          animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.2 }}
         >
           <div className="container mx-auto px-4 py-3 flex flex-col space-y-3">
-            <a 
-              href="#about" 
+            <a
+              href="#about"
               className="block py-2 text-muted-foreground hover:text-primary"
               onClick={onClose}
             >
-              About
+              Sobre
             </a>
-            <a 
-              href="#skills" 
+            <a
+              href="#skills"
               className="block py-2 text-muted-foreground hover:text-primary"
               onClick={onClose}
             >
               Skills
             </a>
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className="block py-2 text-muted-foreground hover:text-primary"
               onClick={onClose}
             >
-              Projects
+              Projetos
             </a>
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="block py-2 text-muted-foreground hover:text-primary"
               onClick={onClose}
             >
-              Contact
+              Contato
             </a>
             <Button variant="link" asChild className="justify-start px-0">
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
+              </a>
             </Button>
           </div>
         </motion.div>

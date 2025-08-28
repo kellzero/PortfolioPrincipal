@@ -11,10 +11,12 @@ export default function About() {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl md:text-3xl font-bold text-center">About Me</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-center">
+            Sobre mim
+          </h2>
           <div className="w-20 h-1 bg-primary mx-auto mt-4 mb-8 rounded-full"></div>
         </motion.div>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,33 +26,59 @@ export default function About() {
           <Card>
             <CardContent className="p-6 md:p-8">
               <p className="text-muted-foreground leading-relaxed">
-                I'm a passionate Full Stack Python Developer with expertise in building scalable web applications. My journey in software development began with a fascination for creating solutions that solve real-world problems.
+                Desenvolvedor em formação, atualmente cursando um programa
+                profissionalizante de Full-Stack em Python. Com experiência em
+                front-end e projetos em andamento no GitHub, busco aprimorar
+                minhas habilidades constantemente e expandir meu conhecimento em
+                novas tecnologias. Desenvolvi, acompanhei e também participei de
+                diversos projetos ao longo do curso, com foco no desenvolvimento
+                de páginas web e pequenas aplicações, como: Listas de tarefas
+                Sorteadores Contadores regressivos em tempo real webpages de
+                venda de produtos e serviços
               </p>
-              
+
               <p className="text-muted-foreground leading-relaxed mt-4">
-                With a strong foundation in Python and modern JavaScript frameworks, I've developed applications that prioritize both functionality and user experience. I believe in writing clean, maintainable code and keeping up with industry best practices.
+                Além disso, estudei e continuo estudando inglês em paralelo,
+                estando atualmente no nível avançado em conversação e
+                compreensão auditiva. Sou uma pessoa paciente, que gosta de
+                aprofundar na resolução de problemas e sempre busca otimizar o
+                tempo da melhor forma possível.
               </p>
-              
+
               <p className="text-muted-foreground leading-relaxed mt-4">
-                When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, and sharing knowledge with the developer community.
+                Gosto da área porque sempre tive proximidade com hardware e,
+                agora, estou desenvolvendo interesse também na parte de
+                software.
               </p>
-              
+
               <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div className="flex flex-col items-center p-4 bg-muted rounded-lg">
-                  <span className="text-2xl font-bold text-primary">4+</span>
-                  <span className="text-sm text-muted-foreground text-center">Years Experience</span>
+                  <span className="text-2xl font-bold text-primary">
+                    0 (ainda)
+                  </span>
+                  <span className="text-sm text-muted-foreground text-center">
+                    Anos de experiencia
+                  </span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-muted rounded-lg">
-                  <span className="text-2xl font-bold text-primary">25+</span>
-                  <span className="text-sm text-muted-foreground text-center">Projects Completed</span>
+                  <span className="text-2xl font-bold text-primary">4</span>
+                  <span className="text-sm text-muted-foreground text-center">
+                    Projetos concluidos
+                  </span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-muted rounded-lg">
-                  <span className="text-2xl font-bold text-primary">15+</span>
-                  <span className="text-sm text-muted-foreground text-center">Happy Clients</span>
+                  <span className="text-2xl font-bold text-primary">
+                    0 (ainda)
+                  </span>
+                  <span className="text-sm text-muted-foreground text-center">
+                    Clientes satisfeitos
+                  </span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-muted rounded-lg">
-                  <span className="text-2xl font-bold text-primary">100+</span>
-                  <span className="text-sm text-muted-foreground text-center">GitHub Contributions</span>
+                  <span className="text-2xl font-bold text-primary">56</span>
+                  <span className="text-sm text-muted-foreground text-center">
+                    Contribuições pro GitHub
+                  </span>
                 </div>
               </div>
             </CardContent>
