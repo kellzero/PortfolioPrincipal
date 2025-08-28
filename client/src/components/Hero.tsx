@@ -27,7 +27,7 @@ export default function Hero({ userInfo }: HeroProps) {
         </p>
         <div className="mt-8 flex flex-wrap gap-4">
           <Button size="lg" asChild>
-            <a href="#contact">Ente em contato</a>
+            <a href="#contact">Entre em contato</a>
           </Button>
           <Button size="lg" variant="outline" asChild>
             <a href="#projects">Ver projetos</a>
