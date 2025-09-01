@@ -18,14 +18,7 @@ export default defineConfig({
   build: {
     outDir: path.resolve(__dirname, "dist"),
     emptyOutDir: true,
-    rollupOptions: {
-      output: {
-        manualChunks: undefined,
-        chunkFileNames: "assets/[name].js",
-        entryFileNames: "assets/[name].js",
-        assetFileNames: "assets/[name].[ext]",
-      },
-    },
+    // REMOVA as configurações de rollupOptions para usar o padrão
   },
   base: "/",
 });

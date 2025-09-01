@@ -9,16 +9,11 @@
   "routes": [
     {
       "src": "/assets/(.*)",
-      "headers": {
-        "Content-Type": "application/javascript"
-      },
-      "continue": true
+      "dest": "/assets/$1"
     },
     {
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }
